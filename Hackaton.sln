@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton", "Hackaton\Hackaton.csproj", "{339120E0-96BE-4367-97E1-F63FA378DBDC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Web", "0 - Web", "{B6B3662D-48C0-4342-B7D4-7E707D817FC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Repository", "1 - Repository", "{D3E63534-F46F-436B-97FC-6EBA425CA4D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{83FFA5FF-5450-48FE-B1D4-3012A865FE76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Presentation", "Hackaton.Presentation\Hackaton.Presentation.csproj", "{2C380CEC-1979-46BE-97C4-C7AAAC59C26B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +17,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{339120E0-96BE-4367-97E1-F63FA378DBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{339120E0-96BE-4367-97E1-F63FA378DBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{339120E0-96BE-4367-97E1-F63FA378DBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{339120E0-96BE-4367-97E1-F63FA378DBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C380CEC-1979-46BE-97C4-C7AAAC59C26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C380CEC-1979-46BE-97C4-C7AAAC59C26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C380CEC-1979-46BE-97C4-C7AAAC59C26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C380CEC-1979-46BE-97C4-C7AAAC59C26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83FFA5FF-5450-48FE-B1D4-3012A865FE76} = {D3E63534-F46F-436B-97FC-6EBA425CA4D7}
+		{2C380CEC-1979-46BE-97C4-C7AAAC59C26B} = {B6B3662D-48C0-4342-B7D4-7E707D817FC3}
 	EndGlobalSection
 EndGlobal

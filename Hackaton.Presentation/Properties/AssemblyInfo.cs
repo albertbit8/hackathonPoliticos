@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Hackaton")]
+[assembly: AssemblyTitle("Hackaton.Presentation")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Hackaton")]
+[assembly: AssemblyProduct("Hackaton.Presentation")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("92da6661-3afa-4963-a0de-eb3387f9a034")]
+[assembly: Guid("0a128891-ef22-45bb-99c5-8cd90fe6fe5a")]
 
 // Version information for an assembly consists of the following four values:
 //

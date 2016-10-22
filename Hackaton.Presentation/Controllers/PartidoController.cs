@@ -5,17 +5,17 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace Hackaton.Areas.Api.Controllers
+namespace Hackaton.Presentation.Controllers
 {
     public class PartidoController : ApiController
     {
-        // GET api/<controller>
+        // GET api/values
         public IEnumerable<string> Get()
         {
             return new string[] { "PT", "PSDB" };
         }
 
-        // GET api/<controller>/5
+        // GET api/values/5
         public string Get(int id)
         {
             return "PT";

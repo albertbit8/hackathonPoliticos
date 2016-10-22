@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Hackaton
+namespace Hackaton.Presentation
 {
     public class BundleConfig
     {
