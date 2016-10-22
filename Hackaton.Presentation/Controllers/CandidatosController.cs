@@ -9,7 +9,7 @@ namespace Hackaton.Presentation.Controllers.Api
 {
     public class CandidatosController : ApiController
     {
-        public List<CandidatosModel> Get()
+        public CandidatoModel Get()
         {
             List<CandidatosModel> candidatos = new List<CandidatosModel>();
 
@@ -27,7 +27,12 @@ namespace Hackaton.Presentation.Controllers.Api
                 Arrecadacao = 10000
             });
 
-            return candidatos;
+            CandidatoModel candidatoModel = new CandidatoModel();
+            candidatoModel.Candidatos = candidatos;
+            candidatoModel.TotalDespesas = 199900;
+            candidatoModel.TotalEleitos = 100;
+
+            return candidatoModel;
         }
 
         public List<CandidatoDetalhesModel> Detalhes(int id)

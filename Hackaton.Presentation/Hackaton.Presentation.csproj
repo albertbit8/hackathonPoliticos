@@ -160,16 +160,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ApiController.cs" />
-    <Compile Include="Controllers\Api\CandidatosController.cs" />
-    <Compile Include="Controllers\Api\PartidosController.cs" />
+    <Compile Include="Controllers\CandidatosController.cs" />
+    <Compile Include="Controllers\CidadesController.cs" />
+    <Compile Include="Controllers\PartidosController.cs" />
     <Compile Include="Controllers\CandidatoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PartidoController.cs" />
+    <Compile Include="Controllers\testController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CandidatoDetalhesModel.cs" />
+    <Compile Include="Models\CandidatoModel.cs" />
     <Compile Include="Models\CandidatosModel.cs" />
+    <Compile Include="Models\CidadeDominioModel.cs" />
+    <Compile Include="Models\PartidoDominioModel.cs" />
     <Compile Include="Models\PartidoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
