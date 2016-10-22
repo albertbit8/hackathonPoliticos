@@ -29,6 +29,7 @@ namespace Hackaton.Presentation.Controllers
             return partidos;
         }
 
+        [HttpGet]
         public List<PartidoModel> Detalhes()
         {
             List<PartidoModel> partidos = new List<PartidoModel>();
