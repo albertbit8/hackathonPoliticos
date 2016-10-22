@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -170,7 +178,30 @@
     </Compile>
     <Compile Include="Models\CandidatoDetalhesModel.cs" />
     <Compile Include="Models\CandidatosModel.cs" />
+    <Compile Include="Models\CapturaLead.cs" />
+    <Compile Include="Models\database_firewall_rules.cs" />
+    <Compile Include="Models\Lead.cs" />
+    <Compile Include="Models\Mapping\CapturaLeadMap.cs" />
+    <Compile Include="Models\Mapping\database_firewall_rulesMap.cs" />
+    <Compile Include="Models\Mapping\LeadMap.cs" />
+    <Compile Include="Models\Mapping\tb_cargoMap.cs" />
+    <Compile Include="Models\Mapping\tb_est_civilMap.cs" />
+    <Compile Include="Models\Mapping\tb_grau_instrucaoMap.cs" />
+    <Compile Include="Models\Mapping\tb_nacionalidadeMap.cs" />
+    <Compile Include="Models\Mapping\tb_ocupacaoMap.cs" />
+    <Compile Include="Models\Mapping\tb_raca_corMap.cs" />
+    <Compile Include="Models\Mapping\tb_sexoMap.cs" />
+    <Compile Include="Models\Mapping\tb_situacao_candidaturaMap.cs" />
     <Compile Include="Models\PartidoModel.cs" />
+    <Compile Include="Models\tb_cargo.cs" />
+    <Compile Include="Models\tb_est_civil.cs" />
+    <Compile Include="Models\tb_grau_instrucao.cs" />
+    <Compile Include="Models\tb_nacionalidade.cs" />
+    <Compile Include="Models\tb_ocupacao.cs" />
+    <Compile Include="Models\tb_raca_cor.cs" />
+    <Compile Include="Models\tb_sexo.cs" />
+    <Compile Include="Models\tb_situacao_candidatura.cs" />
+    <Compile Include="Models\VivaRealDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,7 +238,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
