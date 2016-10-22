@@ -18,6 +18,7 @@ namespace Hackaton.Presentation.Models
 
         public DbSet<CapturaLead> CapturaLeads { get; set; }
         public DbSet<Lead> Leads { get; set; }
+        public DbSet<tb_candidato> tb_candidato { get; set; }
         public DbSet<tb_cargo> tb_cargo { get; set; }
         public DbSet<tb_est_civil> tb_est_civil { get; set; }
         public DbSet<tb_grau_instrucao> tb_grau_instrucao { get; set; }
@@ -32,6 +33,7 @@ namespace Hackaton.Presentation.Models
         {
             modelBuilder.Configurations.Add(new CapturaLeadMap());
             modelBuilder.Configurations.Add(new LeadMap());
+            modelBuilder.Configurations.Add(new tb_candidatoMap());
             modelBuilder.Configurations.Add(new tb_cargoMap());
             modelBuilder.Configurations.Add(new tb_est_civilMap());
             modelBuilder.Configurations.Add(new tb_grau_instrucaoMap());

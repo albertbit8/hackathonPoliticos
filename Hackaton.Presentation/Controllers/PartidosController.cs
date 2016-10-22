@@ -1,6 +1,7 @@
 ﻿using Hackaton.Presentation.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using System.Linq;
 
 namespace Hackaton.Presentation.Controllers
 {
@@ -8,6 +9,11 @@ namespace Hackaton.Presentation.Controllers
     {
         public List<PartidoDominioModel> Get()
         {
+            VivaRealDBContext context = new VivaRealDBContext();
+
+
+            
+
             List<PartidoDominioModel> partidos = new List<PartidoDominioModel>();
             partidos.Add(new PartidoDominioModel()
             {

@@ -1,5 +1,4 @@
-﻿using Hackaton.Presentation.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,11 +6,9 @@ using System.Web.Mvc;
 
 namespace Hackaton.Presentation.Controllers
 {
-    public class CandidatoController : Controller
+    public class FundoPartidarioController : Controller
     {
-        
-        
-        // GET: Candidato
+        // GET: FundoPartidario
         public ActionResult Index()
         {
             return View();
