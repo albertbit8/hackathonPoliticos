@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
+using System.Web.Http;
 
-namespace Hackaton.Presentation.Controllers.Api
+namespace Hackaton.Presentation.Controllers
 {
     public class CandidatosController : ApiController
     {
@@ -35,6 +35,7 @@ namespace Hackaton.Presentation.Controllers.Api
             return candidatoModel;
         }
 
+        [HttpGet]
         public List<CandidatoDetalhesModel> Detalhes(int id)
         {
             List<CandidatoDetalhesModel> candidatos = new List<CandidatoDetalhesModel>();

@@ -1,6 +1,6 @@
 ﻿using Hackaton.Presentation.Models;
 using System.Collections.Generic;
-using System.Web.Mvc;
+using System.Web.Http;
 
 namespace Hackaton.Presentation.Controllers
 {
@@ -23,6 +23,7 @@ namespace Hackaton.Presentation.Controllers
             return partidos;
         }
 
+        [HttpGet]
         public List<PartidoModel> Detalhes()
         {
             List<PartidoModel> partidos = new List<PartidoModel>();
